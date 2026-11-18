@@ -61,3 +61,8 @@ Una vez instalado el entorno, para volver a levantar el panel en cualquier momen
 source venv/bin/activate
 streamlit run dashboard_grc.py
 ```
+### ¿Qué falta para usarlo con datos reales de una empresa?
+No hay que programar nada más; solo configurar las credenciales en el portal de Microsoft (unos 3 minutos):
+1. Registrar la aplicación en **Microsoft Entra ID** para obtener sus 3 claves (`TENANT_ID`, `CLIENT_ID` y `CLIENT_SECRET`).
+2. Darle permisos de **solo lectura** (`User.Read.All`, `Directory.Read.All` y `Application.Read.All`).
+3. Desactivar el interruptor **"Modo Demo"** en el menú lateral del panel y pegar esas 3 claves.
